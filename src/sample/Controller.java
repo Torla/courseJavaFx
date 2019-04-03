@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
@@ -14,6 +15,8 @@ public class Controller {
 
   public ListView veicoliList;
 
+  public Label labelProva;
+
   public void load(ActionEvent actionEvent) {
     //todo load dei dati
 
@@ -23,5 +26,9 @@ public class Controller {
     list.add("a2");
     ObservableList<String> observableList = FXCollections.observableList(list);
     veicoliList.setItems(observableList);
+  }
+
+  public void aggiungiAutomobile(ActionEvent actionEvent) {
+
   }
 }
