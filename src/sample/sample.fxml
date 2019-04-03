@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="1000.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="0" />
@@ -34,25 +34,24 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField />
-            <TextField GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="2" />
-            <TextField GridPane.columnIndex="3" />
-            <TextField GridPane.columnIndex="4" />
-            <TextField GridPane.columnIndex="5" />
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="6" />
+            <TextField fx:id="autoTarga" GridPane.columnIndex="0" />
+            <TextField fx:id="autoAnno" GridPane.columnIndex="1" />
+            <TextField fx:id="autoCilindrata" GridPane.columnIndex="2" />
+            <TextField fx:id="autoPosti" GridPane.columnIndex="3" />
+            <TextField fx:id="autoPorte" GridPane.columnIndex="4" />
+            <TextField fx:id="autoAlimentazione" GridPane.columnIndex="5" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="6" onAction="#addAuto" />
          </children>
           <children>
-            <TextField GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <TextField fx:id="motoTarga" GridPane.rowIndex="1" />
+            <TextField fx:id="motoAnno" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="motoCilindrata" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="motoTempi" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="motoRapporti" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" onAction="#addMoto"/>
          </children>
       </GridPane>
-      <ListView prefHeight="200.0" prefWidth="200.0" />
-      <Button mnemonicParsing="false" text="Button" GridPane.rowIndex="1" />
+      <ListView prefHeight="200.0" prefWidth="200.0" fx:id="veicoliList" />
+      <Button mnemonicParsing="false" text="Button" GridPane.rowIndex="1" onAction="#load"/>
    </children>
 </GridPane>

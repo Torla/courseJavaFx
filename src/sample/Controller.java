@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
 import java.util.Observable;
@@ -16,6 +17,17 @@ public class Controller {
   public ListView veicoliList;
 
   public Label labelProva;
+  public TextField autoTarga;
+  public TextField autoAnno;
+  public TextField autoCilindrata;
+  public TextField autoPosti;
+  public TextField autoPorte;
+  public TextField autoAlimentazione;
+  public TextField motoTarga;
+  public TextField motoAnno;
+  public TextField motoCilindrata;
+  public TextField motoTempi;
+  public TextField motoRapporti;
 
   public void load(ActionEvent actionEvent) {
     //todo load dei dati
@@ -30,5 +42,12 @@ public class Controller {
 
   public void aggiungiAutomobile(ActionEvent actionEvent) {
 
+  }
+
+  public void addAuto(ActionEvent actionEvent) {
+    autoTarga.getText();
+  }
+
+  public void addMoto(ActionEvent actionEvent) {
   }
 }
