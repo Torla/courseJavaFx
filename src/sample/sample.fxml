@@ -52,6 +52,6 @@
          </children>
       </GridPane>
       <ListView fx:id="veicoliList" prefHeight="200.0" prefWidth="200.0" />
-      <Button mnemonicParsing="false" onAction="#load" text="Save" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#save" text="Save" GridPane.rowIndex="1" />
    </children>
 </GridPane>
