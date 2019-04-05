@@ -40,7 +40,7 @@
             <TextField fx:id="autoPosti" GridPane.columnIndex="3" />
             <TextField fx:id="autoPorte" GridPane.columnIndex="4" />
             <TextField fx:id="autoAlimentazione" GridPane.columnIndex="5" />
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="6" onAction="#addAuto" />
+            <Button mnemonicParsing="false" onAction="#addAuto" text="AggiungiAuto" GridPane.columnIndex="6" />
          </children>
           <children>
             <TextField fx:id="motoTarga" GridPane.rowIndex="1" />
@@ -48,10 +48,10 @@
             <TextField fx:id="motoCilindrata" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <TextField fx:id="motoTempi" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <TextField fx:id="motoRapporti" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" onAction="#addMoto"/>
+            <Button mnemonicParsing="false" onAction="#addMoto" text="aggiungiMoto" GridPane.columnIndex="5" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-      <ListView prefHeight="200.0" prefWidth="200.0" fx:id="veicoliList" />
-      <Button mnemonicParsing="false" text="Button" GridPane.rowIndex="1" onAction="#load"/>
+      <ListView fx:id="veicoliList" prefHeight="200.0" prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#load" text="Save" GridPane.rowIndex="1" />
    </children>
 </GridPane>

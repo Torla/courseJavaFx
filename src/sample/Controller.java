@@ -40,12 +40,13 @@ public class Controller {
     veicoliList.setItems(observableList);
   }
 
-  public void aggiungiAutomobile(ActionEvent actionEvent) {
+  public void aggiungiAutomobile(ActionEvent actionEvent){
 
   }
 
   public void addAuto(ActionEvent actionEvent) {
-    autoTarga.getText();
+
+  autoAnno.getText();
   }
 
   public void addMoto(ActionEvent actionEvent) {
